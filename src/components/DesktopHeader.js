@@ -1,6 +1,6 @@
 export default function DesktopHeader() {
   return (
-    <div className="flex ">
+    <div className="flex desktopHeader">
       <h1>TOM</h1>
       <div className="flex ">
         <p>About</p>

@@ -2,7 +2,7 @@ import SectionHeader from "./SectionHeader";
 
 export default function AboutMe() {
   return (
-    <section className="bg-gray-50 flex flex-col items-center">
+    <section className="bg-gray-50 flex flex-col items-center px-4 py-16">
       <SectionHeader text={"About me"} />
       <img src="/profile.jpg" className="w-72 h-96" />
       <div className="text-gray-600 font-normal text-base">
@@ -28,7 +28,7 @@ export default function AboutMe() {
           insights and public project updates on Twitter or GitHub.
         </p>
         <p className="mt-6">Finally, some quick bits about me.</p>
-        <ul className="mt-6 grid-cols-1">
+        <ul className="mt-6 flex flex-wrap list-disc ml-4">
           <li className="w-40 h-11">B.E. in Computer Engineering</li>
           <li className="w-40 h-11">Avid learner</li>
           <li className="w-40 h-11">Full time freelancer</li>
