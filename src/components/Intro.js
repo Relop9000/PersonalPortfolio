@@ -1,8 +1,12 @@
 export default function Intro() {
   return (
-    <section className="px-4 py-16 text-base font-normal text-gray-600">
+    <section className="px-4 py-16 text-base font-normal text-gray-600 desktopIntro">
       <div className="flex justify-center">
-        <img className="w-60 h-72" src="/profile.jpg" />
+        <img
+          className="w-60 h-72 scale-125 border-8 border-white absolute z-10"
+          src="/profile.jpg"
+        />
+        <div className="bg-gray-200 w-80 h-80 -z-0 mt-4"></div>
       </div>
       <div className="mt-12">
         <h3 className="text-4xl font-semibold text-gray-900">Hi, I'm Tom👋</h3>

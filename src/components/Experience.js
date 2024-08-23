@@ -3,10 +3,9 @@ import ExpCard from "./ExpCard";
 
 export default function Experience() {
   return (
-    <section>
-      <SectionHeader text={"Experience"} />
-      <p>Here is a quick summary of my most recent experiences:</p>
-      <ExpCard />
-    </section>
+    <div className="w-80 h-96 bg-white p-8 rounded-xl mt-6">
+      <p>{date}</p>
+      <p>{title}</p>
+    </div>
   );
 }
