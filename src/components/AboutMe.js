@@ -2,7 +2,7 @@ import SectionHeader from "./SectionHeader";
 
 export default function AboutMe() {
   return (
-    <section className="bg-gray-50 flex flex-col items-center px-4 py-16">
+    <section className="bg-gray-50  md:hidden flex flex-col items-center px-4 py-16  ">
       <SectionHeader text={"About me"} />
       <img src="/profile.jpg" className="w-72 h-96" />
       <div className="text-gray-600 font-normal text-base">

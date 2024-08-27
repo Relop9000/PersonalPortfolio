@@ -1,5 +1,5 @@
 import Upwork from "./icons/Upwork";
-import Experience from "./Experience";
+import DesktopExperience from "./ExperienceDesktop";
 import SectionHeader from "./SectionHeader";
 
 const expData = [
@@ -25,9 +25,9 @@ const expData = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
 ];
-export default function ExpCard() {
+export default function ExpCardDesktop() {
   return (
-    <section className="bg-gray-50 md:hidden flex flex-col items-center px-4 py-16 ">
+    <section className="bg-gray-50 md:flex flex-col items-center px-4 py-16 hidden">
       <div>
         <SectionHeader text="Experience" />
       </div>
@@ -36,7 +36,7 @@ export default function ExpCard() {
       </p>
       {expData.map((exp) => {
         return (
-          <Experience
+          <DesktopExperience
             key={exp.id}
             icon={exp.icon}
             date={exp.date}

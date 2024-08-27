@@ -1,9 +1,7 @@
 import Skill from "./Skill";
-import SectionHeader from "../components/SectionHeader";
-import Javascript from "../components/icons/Javascrpit";
-import TypeScript from "../components/icons/Typescript";
-import Next from "./icons/NextIcon";
-import React from "./icons/React";
+import SectionHeader from "./SectionHeader";
+import Javascript from "./icons/Javascrpit";
+import TypeScript from "./icons/Typescript";
 
 const skills = [
   {
@@ -19,12 +17,12 @@ const skills = [
   {
     id: 3,
     name: "React",
-    icon: <React />,
+    icon: <TypeScript />,
   },
   {
     id: 4,
-    name: "Next",
-    icon: <Next />,
+    name: "Typescript",
+    icon: <TypeScript />,
   },
   {
     id: 5,
@@ -93,16 +91,14 @@ const skills = [
   },
 ];
 
-function DesktopSkills() {
+function SkillsDesktop() {
   return (
-    <section className="md:hidden py-16 px-4">
-      <div className="flex justify-center">
-        <SectionHeader text={"Skills"} />
-      </div>
+    <section className="md:flex flex-col items-center hidden px-20 py-24 gap-4">
+      <SectionHeader text={"Skills"} />
       <p className="text-center text-lg font-normal text-gray-600 mb-6">
         The skills, tools and technologies I am really good at:
       </p>
-      <div className="flex flex-col flex-wrap gap-8 h-[760px] w-[343px]">
+      <div className="flex flex-wrap gap-12 justify-center h-[248px]">
         {skills.map((skill) => {
           return <Skill key={skill.id} icon={skill.icon} name={skill.name} />;
         })}
@@ -110,4 +106,4 @@ function DesktopSkills() {
     </section>
   );
 }
-export default DesktopSkills;
+export default SkillsDesktop;

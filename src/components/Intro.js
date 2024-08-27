@@ -1,6 +1,6 @@
 export default function Intro() {
   return (
-    <section className="px-4 py-16 text-base font-normal text-gray-600 desktopIntro">
+    <section className="px-4 py-16 text-base font-normal text-gray-600 md:hidden">
       <div className="flex justify-center">
         <img
           className="w-60 h-72 scale-125 border-8 border-white absolute z-10"
